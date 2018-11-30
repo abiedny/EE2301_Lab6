@@ -16,13 +16,35 @@ module Tester();
     
     initial begin
     //To test, set x and y to whatever 8-bit binary values you want to test, and run the simulation
-        state = 0; clock = 0; x = 8'b00001111; y = 8'b10001000;
+        state = 0; clock = 0; x = 'h00; y = 'hAE;
         #50
         state = 1;
         #50
         clock = 1;
         #50
         clock = 0;
+        #50
+        state = 0;
+        #50
+        x = 'h01; y = 'hAE;
+        #50
+        state = 1;
+        #50
+        clock = 1;
+        #50
+        clock = 0;
+        #50
+        state = 0;
+        #50
+        x = 'hAE; y = 'h01;
+        #50
+        state = 1;
+        #50
+        clock = 1;
+        #50
+        clock = 0;
+        #50
+        state = 0;
     end
 
 endmodule
