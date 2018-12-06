@@ -51,6 +51,7 @@ module Wrapper(sw, btnC, clock, led);
             if (y[0] == 1) begin
                 out = out + (x << 0);  
             end
+            #3000000
             //and then when we done multiplying we move states to state 2
             state = 2'b10; 
         end
@@ -58,17 +59,17 @@ module Wrapper(sw, btnC, clock, led);
             //Multiplication is done so display it
             //ok it should be displaying because of procedural assignment, so I guess we do nothing here?
         end
-        else if (state == 2'b00) begin
+        /*else if (state == 2'b00) begin
             //clear out the out register once we're back at the begining
             //this will clear the LED's as well
             out[15:0] = 'b0;
-        end
+        end*/
         
         if (btnC) begin
             if (state == 2'b00) begin
                 x = sw[7:0];
                 y = sw[15:8];
-                #50
+                #3000000
                 state = 2'b01;
             end
             else if (state == 2'b10) state = 2'b00;
