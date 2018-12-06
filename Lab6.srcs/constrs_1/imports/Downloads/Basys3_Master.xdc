@@ -114,8 +114,8 @@ set_property IOSTANDARD LVCMOS33 [get_ports btnC]
 #btnU
 #set_property PACKAGE_PIN T18 [get_ports rateUp]
 #set_property IOSTANDARD LVCMOS33 [get_ports rateUp]
-#set_property PACKAGE_PIN W19 [get_ports btnL]
-#set_property IOSTANDARD LVCMOS33 [get_ports btnL]
+#set_property PACKAGE_PIN W19 [get_ports clock]
+#set_property IOSTANDARD LVCMOS33 [get_ports clock]
 #set_property PACKAGE_PIN T17 [get_ports btnR]
 #set_property IOSTANDARD LVCMOS33 [get_ports btnR]
 #btnD
