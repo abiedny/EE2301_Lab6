@@ -1,6 +1,5 @@
 # Lab 6
-Vivado should load the entire project if you load the Lab6.xpr project file.
-
-All of the Verilog code is in the Lab6.srcs folder.
+Implements a add/shift multiplication algorithm to multiply two 8-bit numbers and show the result as a 16-bit number.
+Designed using Vivado, constraint file included for BaSys3 FPGA board.
 
 Multiplication algorithm is explained https://math.stackexchange.com/questions/1903502/binary-multiplication-as-combination-of-addition-and-left-shift
